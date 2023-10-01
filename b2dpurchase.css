@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    transition: all 0.3s;
+}
+
+
+
+.forma{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center; 
+    justify-content: center;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="submit"] {
+    background-color: royalblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.custom-table {
+    width: 50%; 
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+.custom-table th, .custom-table td {
+    padding: 5px;
+    text-align: left;
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    background-color: #0D47A1;
+}
+.photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    float: none;
+    margin-right: 100px;
+}
+.osnova{
+    text-align: center;
+    font-size: 1.2em
+}
+.tableta{
+    text-align: center;
+}
+.btn{
+    background-color: royalblue; 
+    color: white; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.AdVideo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Paraph{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.tablica {
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+.tablica table {
+    border-collapse: collapse; 
+}
+.tablica td, .tablica th {
+    border: 1px solid lightgray; 
+    padding: 8px; 
+    text-align: left; 
+}
+.tablica th {
+    background-color: lightgray; 
+}
