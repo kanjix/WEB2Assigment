@@ -56,3 +56,69 @@ body{
 .tablica th {
     background-color: lightgray; 
 }
+
+
+
+
+/* Общий стиль для кнопок */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #045bff;
+}
+
+.tab-content {
+    color: darkblue;
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 400px; /* Максимальная ширина для контента */
+    margin: 0 auto; /* Центрирование контента по горизонтали */
+}
+
+/* Обновленные стили для аккордеонов */
+.accordion {
+    margin: 10px 0;
+    width: 100%;
+    max-width: 400px; /* Максимальная ширина для контента */
+}
+
+.accordion-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.accordion-button:hover {
+    background-color: #045bff;
+}
+.accordion-content {
+    display: none;
+    color: darkblue;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 400px; 
+    margin: 0 auto; 
+}

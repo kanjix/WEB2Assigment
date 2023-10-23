@@ -27,7 +27,7 @@
                 <a class="nav-link text-white">Contact: +7 (706) 425 85 37</a>
             </li>
             <li class="nav-item">
-            	<a class="btn btn-primary position-relative" href="b2b3.html" role="button">Profile
+            	<a class="btn btn-primary position-relative" href="b2dprofile.html" role="button">Profile
             	<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
     				<span class="visually-hidden">New alerts</span>
   				</span>
@@ -72,49 +72,25 @@
 </center>
 <br>
 <br>
-  <form class="row g-3">
-  <div class="row mx-auto my-12 my-sm-6 my-md-6 p-3 align-middle ">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3">
-    </div>
-  </div>
-  <div class="row mx-auto my-2 my-sm-3 my-lg-4 p-3 align-middle">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3">
-    </div>
-  </div>
-  <fieldset class="row mx-auto my-2 my-sm-3 my-lg-4 p-3 align-middle">
-    <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
-    <div class="col-sm-10">
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-        <label class="form-check-label" for="gridRadios1">
-          Male
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-        <label class="form-check-label" for="gridRadios2">
-          Female
-        </label>
-      </div>
-    </div>
-  </fieldset>
-  <div class="row mx-auto my-2 my-sm-3 my-lg-4 p-3 align-middle">
-    <div class="col-sm-10 offset-sm-2">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-          🛈 Получать новости и обновления.
-        </label>
-      </div>
-    </div>
-  </div>
-  <div class="d-grid gap-2 col-6 mx-auto">
-  <button type="submit" class="btn btn-outline-primary ">Зарегистрироваться</button>
-</div>
+<br>
+  <form id="myForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <span class="error" id="nameError"></span>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <span class="error" id="emailError"></span>
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <span class="error" id="passwordError"></span>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
 <br>
 
 <br>
@@ -144,8 +120,24 @@
         <a href="https://www.tiktok.com/@buy2deli?_t=8g9wUJyqhCo&_r=1" class="list-group-item list-group-item-action">Tap to follow the TikTok</a>
     </div>
 <br>
-<br>
+<br>	
 <hr>
+
+<div id="myToDo" class="header">
+  <h2>My To-Do List</h2>
+  <input type="text" id="taskInput" placeholder="Add a new task">
+  <span onclick="addTask()" class="addBtn">Add</span>
+</div>
+
+<ol id="taskList">
+  <li>Buy Tee's</li>
+  <li>Sign Up</li>
+  <li>Buy New Shoes</li>
+  <li>Upgrade Your Style</li>
+</ol>
+
+
+
 <br>
 
 <footer>
@@ -156,6 +148,6 @@
         </svg>
     </footer>
 
-
+    <script src="b2b3js.js"></script>
 </body>
 </html>

@@ -55,7 +55,7 @@
 
     <div class="photos">
         <img src="adiki.png" alt="adidaslogo" style="width: 250px">
-        <img src="Nikee.png" alt="nikelogo" style="width: 250px">
+        <img src="nikee.png" alt="nikelogo" style="width: 250px">
         <img src="ck.png" alt="calvinlogo" style="width: 250px">
         <img src="ysslogo.png" alt="saintlaurenlogo" style="width: 250px">
         <img src="salonon.png" alt="salomonlogo" style="width: 250px">
@@ -103,9 +103,44 @@
     </section>
     <br>
     <br>
-    
+    <center>
+    <h1>Interactive Elements</h1>
+    <div>
+        <button onclick="openTab('tab1')">[?] Info 1</button>
+        <button onclick="openTab('tab2')">[?] Info 2</button>
+        <button onclick="toggleAccordion('accordion1')">Accordion 1</button>
+        <button onclick="toggleAccordion('accordion2')">Accordion 2</button>
+    </div>
+
+    <div class="tab-content" id="tab1">
+        <h2>Delivery Information for Tab 1</h2>
+        <p>We offer fast and reliable delivery services for all your clothing needs. Whether you're ordering the latest fashion trends or wardrobe essentials, we've got you covered. With our express shipping, you can expect your items to arrive within 2-3 business days. We also offer free shipping on orders over $50, making your shopping experience even more convenient and affordable.</p>
+    </div>
+
+    <div class="tab-content" id="tab2">
+        <h2>Delivery Information for Tab 2</h2>
+        <p>At Tab 2, we understand the importance of getting your clothing orders delivered promptly. We provide a range of shipping options to suit your needs. Our standard delivery takes approximately 5-7 business days, while our premium delivery option guarantees next-day delivery. No matter which option you choose, we ensure that your clothing arrives in perfect condition and ready to wear.</p>
+    </div>
+
+    <div class="accordion" id="accordion1">
+        <button class="accordion-button" onclick="toggleAccordion('accordion1')">Accordion 1</button>
+        <div class="accordion-content">
+            <p>Tab 3 is committed to delivering your clothing orders in the most eco-friendly way possible. Our delivery process emphasizes sustainability and minimizing our carbon footprint. We use recycled packaging materials and partner with eco-conscious shipping providers to ensure your items are delivered with care for the environment. Join us in making a positive impact on the planet while receiving your stylish clothing.</p>
+        </div>
+    </div>
+
+    <div class="accordion" id="accordion2">
+        <button class="accordion-button" onclick="toggleAccordion('accordion2')">Accordion 2</button>
+        <div class="accordion-content">
+            <p>Accordion 3 offers flexible delivery options to accommodate your schedule. We understand that receiving clothing on your terms is important, so we provide weekend delivery, evening delivery, and even same-day delivery services. Whether you prefer to receive your orders on a Saturday morning or after work, we've got you covered. We value your time and convenience.</p>
+        </div>
+    </div>
+    </center>
+    <br>
+    <br>
     <br> 
     <hr>
+    <script src="b2djs.js"></script>
     <footer>
         <p>&copy; 2023 Buy2Deli redemption services</p>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">

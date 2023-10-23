@@ -176,9 +176,35 @@
         </table>
 <br>
 <br>
+<br>
+<center>
+  <h1>User Feedback</h1>
+</center>
+   
+    <form id="feedbackForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+        <label for="message">Feedback:</label>
+        <textarea id="message" name="message" placeholder="Your Feedback"></textarea>
+        <button onclick="submitFeedback()">Submit</button>
+    </form>
+    <ul id="feedbackList"></ul>
 
+<br>
+<br>
+<center>
+  
+
+ <div id="floating-popup">
+        <h3>Dont miss the SALE!</h3>
+        <p>Акция в честь Halloween! Скидки до -70%!!!</p>
+        <button id="close-button" onclick="closePopup()">Close</button>
+    </div>
+    </center>
+<br>
+<br>
 <hr>
-
+<script src="indexjs.js"></script>
 <footer>
     <p>&copy; 2023 Buy2Deli redemption services</p>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">

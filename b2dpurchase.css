@@ -48,3 +48,74 @@ input[type="submit"] {
     padding: 5px;
     text-align: left;
 }
+
+
+
+
+
+#feedbackForm {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #feedbackForm input[type="text"], #feedbackForm textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #feedbackForm button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #feedbackForm button:hover {
+            background-color: #045bff;
+        }
+        #feedbackList {
+            list-style-type: none;
+            padding: 0;
+        }
+        .feedback {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 5px 0;
+            background-color: #f9f9f9;
+        }
+
+
+
+#floating-popup {
+    position: fixed;
+    top: 25%;
+    left: 98%;
+    transform: translate(-100%, -50%);
+    background-color: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+#close-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: right;
+}
+
+#close-button:hover {
+    background-color: #045bff;
+}
