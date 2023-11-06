@@ -13,4 +13,14 @@ function openTab(tabId) {
             } else {
                 accordionContent.style.display = 'block';
             }
-        }
+        } 
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const openCatalogButton = document.getElementById("openCatalogButton");
+    const catalogModal = new bootstrap.Modal(document.getElementById("catalogModal"));
+
+    openCatalogButton.addEventListener("click", () => {
+        catalogModal.show();
+    });
+});

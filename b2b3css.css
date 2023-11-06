@@ -108,3 +108,51 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+
+.counter {
+    font-size: 18px;
+    margin: 20px;
+    text-align: center;
+}
+
+.counter-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.count {
+    font-size: 24px;
+    color: #007BFF; 
+}
+.register-button {
+    background-color: #007BFF;
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.register-button:hover {
+    background-color: #0056b3; 
+}
+/* CSS анимация для фото одежды */
+@keyframes sway {
+    0% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+/* Применение анимации к фото одежды */
+#clothingImage {
+    margin-left: -50px;
+    animation: sway 3s linear infinite; /* Длительность 4 секунды, бесконечное повторение */
+}

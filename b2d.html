@@ -75,9 +75,73 @@
             <p>Отслеживание заказов: Вы можете отслеживать статус вашего заказа в реальном времени, чтобы всегда быть в курсе его местоположения.</p>
             <p>С Buy2Deli вы на верном пути к успеху. Свяжитесь с нами сегодня и дайте нам возможность удивить вас.</p>
         </div>
-        <a href="https://wa.me/77064258537" class="btn">Закажи сейчас!</a>
-        <br>
-        <img src="video/adbuy2deli.gif" alt="AdBuy2Deli" height="835px" class="AdVideo">
+    <br>
+    <br>
+
+
+
+
+
+   <main class="container mt-5">
+        <button class="btn btn-success" id="openCatalogButton">Открыть каталог</button>
+
+        <!-- Модальное окно (начально скрыто) -->
+        <div id="catalogModal" class="modal fade">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Каталог товаров</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="lvscarf.jpg" class="card-img-top" alt="Товар 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">LV Scarf</h5>
+                                        <p class="card-text">Качественный и модный шарф от Louis Vuitton</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="cavemptjacket.jpg" class="card-img-top" alt="Товар 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">cav empt. Jacket</h5>
+                                        <p class="card-text">Теплая ветровка прямиком с Японии</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="bapesta.jpg" class="card-img-top" alt="Товар 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">BAPE® Bape Sta #1</h5>
+                                        <p class="card-text">Икона моды среди молодежи</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+<br>
+<br>
+
+
+    <br>
+    <br>
+
+        <div class="adb2d">
+            <img src="video/adbuy2deli.gif" alt="AdBuy2Deli" height="850px" class="AdVideo">
+        </div>
     </section>
     <hr>
 
@@ -103,8 +167,11 @@
     </section>
     <br>
     <br>
+
+
+
     <center>
-    <h1>Interactive Elements</h1>
+    <h1>More Information</h1>
     <div>
         <button onclick="openTab('tab1')">[?] Info 1</button>
         <button onclick="openTab('tab2')">[?] Info 2</button>

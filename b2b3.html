@@ -66,6 +66,24 @@
 
 
 <center>
+<div id="userCounter" class="counter">
+    <span class="counter-label">Количество поситителей:</span>
+    <span id="userCount" class="count">0</span>
+</div>
+<button id="registerUserBtn" class="register-button">Я гость!</button>
+</center>
+<br>
+
+
+
+<!-- ... -->
+<img id="clothingImage" src="trapstr.png" alt="Фото одежды" width="15%">
+<!-- ... -->
+
+
+
+
+<center>
 <h1>
 	Join us today!
 </h1>
@@ -149,5 +167,29 @@
     </footer>
 
     <script src="b2b3js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function () {
+    // Инициализируем счетчик зарегистрированных пользователей значением 0
+    var userCount = 0;
+    var $userCountElement = $('#userCount'); // Элемент, в котором отображается счетчик
+
+    // Функция для обновления отображаемого значения счетчика
+    function updateUserCounter() {
+        $userCountElement.text(userCount);
+    }
+
+    // Обработчик события клика на кнопке "Зарегистрировать пользователя"
+    $('#registerUserBtn').on('click', function () {
+        // Увеличиваем счетчик зарегистрированных пользователей и обновляем значение на странице
+        userCount++;
+        updateUserCounter();
+    });
+
+    // Вы можете добавить другую логику, чтобы инициализировать счетчик данными с сервера или хранилища при загрузке страницы.
+    // Например, если у вас есть сервер, который отдает количество пользователей, вы можете выполнить AJAX-запрос для получения этой информации.
+});
+</script>
+
 </body>
 </html>

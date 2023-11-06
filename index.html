@@ -150,7 +150,153 @@
 
 
 
+<br>
+<br>
+<br>
+<center>
+  <h1>Play and open new styles!</h1>
+  <div class="game">
+    <div class="col-6 col-md-6 col-lg-6">
+        <ul class="draggable-list">
+            <li class="li-game" id="e1" draggable="true">Gucci</li>
+            <li class="li-game" id="e2" draggable="true">A BATHING APE</li>
+            <li class="li-game" id="e3" draggable="true">Adidas</li>
+            <li class="li-game" id="e4" draggable="true">Canada Goose</li>
+            <li class="li-game" id="e5" draggable="true">Louie Vuitton</li>
+            <li class="li-game" id="e6" draggable="true">cav empt.</li>
+            <li class="li-game" id="e7" draggable="true">Burberry</li>
+        </ul>
+    </div>
+    <div class="col-6 col-md-6 col-lg-6">
+        <ul class="draggable-list">
+            <li class="li-game" id="s1" draggable="true">Italy</li>
+            <li class="li-game" id="s4" draggable="true">Canada</li>
+            <li class="li-game" id="s5" draggable="true">France</li>
+            <li class="li-game" id="s6" draggable="true">Japan</li>
+            <li class="li-game" id="s7" draggable="true">UK</li>
+            <li class="li-game" id="s2" draggable="true">Japan</li>
+            <li class="li-game" id="s3" draggable="true">US</li>
+        </ul>
+    </div>
+</div>
 
+<div id="end-message">
+    <h3 class="display-6">Nice Job!</h3>
+    <table>
+        <tr>
+            <th>Brand</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Gucci</td>
+            <td>Italy</td>
+        </tr>
+        <tr>
+            <td>A BATHING APE</td>
+            <td>Japan</td>
+        </tr>
+        <tr>
+            <td>Adidas</td>
+            <td>US</td>
+        </tr>
+        <tr>
+            <td>Canada Goose</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Louie Vuitton</td>
+            <td>France</td>
+        </tr>
+        <tr>
+            <td>cav empt.</td>
+            <td>Japan</td>
+        </tr>
+        <tr>
+            <td>Burberry</td>
+            <td>UK</td>
+        </tr>
+    </table>
+
+    <button onclick="playAgain()">Play Again</button>
+</div>
+
+    </center>
+<br>
+<br>
+<hr>
+<br>
+<header class="text-light text-center py-3" style="background-color: #0075ff;">
+        <h1>Каталог одежды</h1>
+    </header>
+
+
+<main class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="gucciadidas.jpg" alt="Tee" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">adidas x Gucci Tee</h5>
+                    <p class="card-text">Price: $249.99</p>
+                    <p class="card-text">Size: S, M, L, XL</p>
+                    <button class="btn btn-primary" onclick="orderClothing('adidas x Gucci Tee')">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="cavemptjeans.jpg" alt="Trousers" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">cav empt. Jeans</h5>
+                    <p class="card-text">Price: $249.99</p>
+                    <p class="card-text">Size: 34, 36, 38, 40, 42</p>
+                    <button class="btn btn-primary" onclick="orderClothing('cav empt. Jeans')">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="adidaspink.jpg" alt="Shoes" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">adidas Forum 84 Low Pink</h5>
+                    <p class="card-text">Price: $139.99</p>
+                    <p class="card-text">Size: 6, 7, 8, 9, 10, 11</p>
+                    <button class="btn btn-primary" onclick="orderClothing('adidas Forum 84 Low Pink')">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="burberrycap.jpg" alt="Cap" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Burberry Hat</h5>
+                    <p class="card-text">Price: $429.99</p>
+                    <p class="card-text">Size: One size</p>
+                    <button class="btn btn-primary" onclick="orderClothing('Burberry Hat')">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="apebag.jpg" alt="Bag" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">A BATHING APE® - BAG</h5>
+                    <p class="card-text">Price: $179.99</p>
+                    <p class="card-text">Size: One size</p>
+                    <button class="btn btn-primary" onclick="orderClothing('A BATHING APE® - BAG')">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+  
+<audio id="addToCartSound">
+    <source src="korzina.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<br>
 <br>
 <hr>
 <br>
@@ -195,7 +341,7 @@
 <center>
   
 
- <div id="floating-popup">
+    <div id="floating-popup">
         <h3>Dont miss the SALE!</h3>
         <p>Акция в честь Halloween! Скидки до -70%!!!</p>
         <button id="close-button" onclick="closePopup()">Close</button>
@@ -205,6 +351,15 @@
 <br>
 <hr>
 <script src="indexjs.js"></script>
+
+
+
+
+
+
+<br>
+<br>
+
 <footer>
     <p>&copy; 2023 Buy2Deli redemption services</p>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">

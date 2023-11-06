@@ -119,3 +119,164 @@ input[type="submit"] {
 #close-button:hover {
     background-color: #045bff;
 }
+
+
+.custom-header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.custom-main {
+    text-align: center;
+}
+
+.puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-gap: 5px;
+}
+
+.puzzle-piece {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.custom-header, .custom-main {
+    margin: 0 auto;
+    max-width: 460px; /* Ширина может быть изменена на ваше усмотрение */
+}
+
+
+#piece4 {
+    background-image: url("gucciadidas.jpg");
+}
+
+#piece5 {
+    background-image: url("piece5.jpg");
+}
+
+
+
+/* CSS анимация для всплывающего окна */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Применение анимации к всплывающему окну */
+#floating-popup {
+    margin-left: -325px;
+    margin-top: -100px;
+    animation: pulse 2s ease-in-out infinite; /* Длительность 2 секунды, бесконечное повторение */
+}
+
+
+@keyframes closeAndShrink {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/* Применение анимации к всплывающему окну при закрытии */
+#floating-popup.closing {
+    animation: closeAndShrink 0.3s ease;
+}
+
+
+
+
+
+.list-group-item {
+    background-color: #3498db; /* Синий цвет */
+    color: white;
+}
+
+.game {
+    max-width: 960px;
+    margin: auto;
+    color: white;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+
+.draggable-list {
+    padding: 5px;
+}
+
+.li-game {
+    font-family: 'Bebas Neue', sans-serif;
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    background-color: #3498db; /* Синий цвет */
+    border: 1px solid #b0bec5;
+    color: white;
+    cursor: grab;
+}
+
+.over {
+    background-color: #2980b9; /* Более темный синий цвет */
+}
+
+table {
+    max-width: 640px;
+    margin: auto auto 20px;
+    background-color: #3498db; /* Синий цвет */
+    color: white;
+}
+
+th, td {
+    padding: 10px 10px;
+}
+
+td {
+    border: 1px solid #b0bec5;
+}
+
+tr {
+    background-color: #2980b9; /* Более темный синий цвет */
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+button {
+    margin: auto;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #3498db; /* Синий цвет */
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+button:hover {
+    background-color: #2980b9; /* Более темный синий цвет при наведении */
+}
+
+#endMessage {
+    display: none;
+}

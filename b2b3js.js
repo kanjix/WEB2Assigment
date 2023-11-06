@@ -99,3 +99,34 @@ function validateForm() {
             var emailPattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
             return emailPattern.test(email);
         }
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const clothingImage = document.getElementById("clothingImage");
+
+    // Изменение направления анимации при завершении каждой итерации
+    clothingImage.addEventListener("animationiteration", () => {
+        const currentRotation = parseFloat(getComputedStyle(clothingImage).getPropertyValue("transform").split(',')[0].split('(')[1]);
+        if (currentRotation === 5) {
+            clothingImage.style.animationDirection = "normal"; // Поворот вперед
+        } else {
+            clothingImage.style.animationDirection = "reverse"; // Поворот назад
+        }
+    });
+});
+
+
+
+
+class Person {
+  constructor(firstName, lastName, age, email) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.email = email;
+  }
+}
+
+const person1 = new Person("John", "Doe", 30, "johndoe@example.com");
+const person2 = new Person("Jane", "Smith", 25, "janesmith@example.com");
