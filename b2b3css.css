@@ -70,25 +70,90 @@ li input[type="checkbox"] {
 
 
 
-
-form {
-    max-width: 600px;
-    max-height: 700px;
-    margin: 20px auto;
-    padding: 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#regForm {
+  background-color: #ffffff;
+  font-family: 'Bebas Neue', sans-serif;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input[type="text"], input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Style the input fields */
+input {
+    font-family: 'Bebas Neue', sans-serif;
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  border: 1px solid #aaaaaa;
+  margin-bottom: 15px;
 }
+
+/* Mark input boxes that get an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  font-family: 'Bebas Neue', sans-serif;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #3498db; /* Blue color */
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04AA6D;
+}
+
+/* Added space on the sides */
+@media (min-width: 768px) {
+  #regForm {
+    width: 50%;
+  }
+}
+
+
+
+#prevBtn,
+  #nextBtn {
+    background-color: #3498db; /* Blue color */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Make them more rounded */
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  #prevBtn:hover,
+  #nextBtn:hover {
+    background-color: #2980b9; /* Darker blue color on hover */
+  }
+
+
+
+
+
+
+
 
 .error {
     color: red;

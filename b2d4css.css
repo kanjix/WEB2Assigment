@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    height: 100vh;
+    background-color: #0D47A1;
+}
+
+#videoContainer {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: white;
+    width: 100%;
+    color: black;
+}
+
+#quiz-container {
+    background-color: darkblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3; /* Цвет фона */
+    border: none; /* Убираем границу */
+    color: white; /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    display: inline-block; /* Строчно-блочный элемент */
+    font-size: 16px; /* Размер шрифта */
+    border-radius: 8px; /* Радиус скругления углов */
+}
+
+button:hover {
+    background-color: #0D47A1; /* Изменение цвета при наведении */
+}
+
+#nextBtn {
+    background-color: #4CAF50; /* Зеленый цвет кнопки "Next Question" */
+}
+
+#nextBtn:hover {
+    background-color: #45a049; /* Темнозеленый цвет при наведении */
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
